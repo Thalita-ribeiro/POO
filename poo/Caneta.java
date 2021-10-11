@@ -17,7 +17,7 @@ public class Caneta {
 
     public void escrever() {
         if (tampada == true) {
-            System.out.println("Não escreve");
+            System.out.println("Não escrever");
         } else {
             System.out.println("Escrever");
         }
