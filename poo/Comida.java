@@ -1,5 +1,7 @@
+package poo;
+
 public class Comida {
-    boolean comFome = true;
+    boolean comFome;
 
     public void seEstiverComFomePedirComida() {
         if (comFome) {

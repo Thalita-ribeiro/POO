@@ -5,7 +5,7 @@ public class Caneta {
     public String cor;
     private float ponta;
     protected int carga;
-    protected boolean tampada;
+    private boolean tampada;
 
     public void status() {
         System.out.println("Modelo: " + this.modelo);
@@ -17,7 +17,7 @@ public class Caneta {
 
     public void escrever() {
         if (tampada == true) {
-            System.out.println("Não escrever");
+            System.out.println("Não escreve");
         } else {
             System.out.println("Escrever");
         }
@@ -31,22 +31,24 @@ public class Caneta {
         }
     }
 
-    private void tampar() {
+    public void tampar() {
         this.tampada = true;
     }
 
-    private void destampar() {
+    public void destampar() {
         this.tampada = false;
     }
 
     public static void main(String[] args) {
         Caneta caneta = new Caneta();
-        caneta.modelo = "Big";
+        caneta.modelo = "Bic";
         caneta.cor = "Azul";
         caneta.ponta = 7.0F;
         caneta.carga = 100;
         caneta.tampada = true;
+
         caneta.status();
+        caneta.escrever();
         caneta.rabiscar();
     }
 }
