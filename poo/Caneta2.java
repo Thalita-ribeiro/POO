@@ -6,8 +6,8 @@ public class Caneta2 {
         caneta.modelo = "Bic";
         caneta.cor = "Vermelha";
         caneta.carga = 50;
-        caneta.tampar();
 
+        caneta.tampar();
         caneta.status();
         caneta.escrever();
     }
