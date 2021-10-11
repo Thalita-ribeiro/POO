@@ -1,4 +1,4 @@
-public class Caneta {
+public class Caneta2 {
     boolean tampada;
 
     public void rabiscar() {
@@ -18,10 +18,10 @@ public class Caneta {
     }
 
     public static void main(String[] args) {
-        Caneta caneta = new Caneta();
+        Caneta2 caneta = new Caneta2();
         caneta.rabiscar();
 
-        Caneta caneta2 = new Caneta();
+        Caneta2 caneta2 = new Caneta2();
         caneta2.destampar();
         caneta2.tampar();
         caneta2.rabiscar();
