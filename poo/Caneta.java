@@ -16,7 +16,7 @@ public class Caneta {
     }
 
     public void escrever() {
-        if (tampada == true) {
+        if (tampada) {
             System.out.println("Não escrever");
         } else {
             System.out.println("Escrever");
@@ -24,7 +24,7 @@ public class Caneta {
     }
 
     public void rabiscar() {
-        if (tampada == true) {
+        if (tampada) {
             System.out.println("Voce nao vai conseguir rabiscar");
         } else {
             System.out.println("Rabiscar");
