@@ -7,6 +7,11 @@ public class Banco {
     private float saldo;
     private boolean status;
 
+    public Banco() {
+        this.setSaldo(0);
+        this.setStatus(false);
+    }
+
     public void estadoAtual() {
         System.out.println("Banco ");
         System.out.println("Conta " + this.getNumeroDaConta());
