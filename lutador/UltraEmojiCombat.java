@@ -8,7 +8,7 @@ public class UltraEmojiCombat {
         lutador[0].ganharVitoria();
         lutador[0].status();
 
-        lutador[1] = new Lutador("Adam", "EUA", 36, 1.75, 80, 20, 4, 4);
+        lutador[1] = new Lutador("Adam", "EUA", 36, 1.75, 90, 20, 4, 4);
         lutador[1].perderLuta();
         lutador[1].status();
 
@@ -24,5 +24,9 @@ public class UltraEmojiCombat {
 
         lutador[5] = new Lutador("Yun", "China", 30, 1.77, 93, 12, 1, 1);
         lutador[5].status();
+
+        Luta luta = new Luta();
+        luta.marcarLuta(lutador[0], lutador[1]);
+        luta.lutar();
     }
 }
