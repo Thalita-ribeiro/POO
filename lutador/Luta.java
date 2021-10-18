@@ -72,12 +72,12 @@ public class Luta {
                     this.desafiante.empatarLuta();
                     break;
                 case 1:
-                    System.out.println("Vitória do " + desafiado.getNome());
+                    System.out.println("Vitória do(a) " + desafiado.getNome());
                     this.desafiado.ganharVitoria();
                     this.desafiante.perderLuta();
                     break;
                 case 2:
-                    System.out.println("Vitória do " + desafiante.getNome());
+                    System.out.println("Vitória do(a) " + desafiante.getNome());
                     this.desafiante.ganharVitoria();
                     this.desafiado.perderLuta();
                     break;

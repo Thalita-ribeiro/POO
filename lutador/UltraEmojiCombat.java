@@ -28,5 +28,27 @@ public class UltraEmojiCombat {
         Luta luta = new Luta();
         luta.marcarLuta(lutador[0], lutador[1]);
         luta.lutar();
+
+        Lutadora lutadora[] = new Lutadora[6];
+
+        lutadora[0] = new Lutadora("Maria", "Brasil", 27, 1.65, 80, 9, 1, 0);
+
+        lutadora[1] = new Lutadora("Julia", "China", 29, 1.70, 75, 15, 2, 1);
+
+        lutadora[2] = new Lutadora("Eduarda", "Alemanha", 28, 1.67, 70, 11, 2, 2);
+        lutadora[2].apresentar();
+
+        lutadora[3] = new Lutadora("Hellen", "EUA", 32, 1.76, 90, 75, 2, 0);
+        lutadora[3].apresentar();
+
+        lutadora[4] = new Lutadora("Bianca", "Japāo", 34, 1.69, 67, 11, 2, 2);
+        lutadora[4].apresentar();
+
+        lutadora[5] = new Lutadora("Gabriela", "França", 31, 1.80, 89, 19, 4, 1);
+        lutadora[5].apresentar();
+
+        Luta luta1 = new Luta();
+        luta1.marcarLuta(lutadora[0], lutadora[1]);
+        luta1.lutar();
     }
 }
