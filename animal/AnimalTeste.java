@@ -4,6 +4,7 @@ public class AnimalTeste {
     public static void main(String[] args) {
         Mamifero mamifero = new Mamifero();
         Cachorro cachorro = new Cachorro();
+        Lobo lobo = new Lobo();
         Reptil reptil = new Reptil();
         Peixe peixe = new Peixe();
         Ave ave = new Ave();
@@ -16,6 +17,8 @@ public class AnimalTeste {
 
         cachorro.enterrarOsso();
         cachorro.emitirSom();
+
+        lobo.emitirSom();
 
         reptil.setPeso(5);
         reptil.setIdade(3);
