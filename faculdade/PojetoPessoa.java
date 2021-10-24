@@ -4,6 +4,7 @@ public class PojetoPessoa {
     public static void main(String[] args) {
         Pessoa pessoa = new Professor();
         Aluno aluno = new Aluno();
+        Bolsista bolsista = new Bolsista();
         Professor professor = new Professor();
         Funcionario funcionario = new Funcionario();
 
@@ -12,6 +13,15 @@ public class PojetoPessoa {
 
         aluno.setNome("Julia");
         aluno.setIdade(20);
+        aluno.setMatricula(1111);
+        aluno.setCurso("informatica");
+        aluno.setSexo("Feminino");
+        aluno.pagarMensalidade();
+
+        bolsista.setMatricula(2222);
+        bolsista.setNome("Eliane");
+        bolsista.setBolsa(100);
+        bolsista.setSexo("Feminino");
 
         professor.setNome("Fernando");
         professor.setIdade(38);

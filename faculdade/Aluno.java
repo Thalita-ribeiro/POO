@@ -1,14 +1,14 @@
 package faculdade;
 
 public class Aluno extends Pessoa {
-    private String matricula;
+    private int matricula;
     private String curso;
 
-    public String getMatricula() {
+    public int getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
 
@@ -22,5 +22,9 @@ public class Aluno extends Pessoa {
 
     public void cancelarMatricula() {
         System.out.println("Matricula será cancelada");
+    }
+
+    public void pagarMensalidade() {
+        System.out.println("Pagando mensalidade da aluna " + this.getNome());
     }
 }
