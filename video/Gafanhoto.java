@@ -9,14 +9,6 @@ public class Gafanhoto extends Pessoa {
         this.login = login;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public double getTotalAssistido() {
         return totalAssistido;
     }
@@ -32,7 +24,12 @@ public class Gafanhoto extends Pessoa {
     @Override
     public String toString() {
         return "Gafanhoto: " + "\n" +
+                " Nome = " + nome + "\n" +
+                " Idade = " + idade + "\n" +
+                " Sexo = " + sexo + "\n" +
                 " Login = " + login + "\n" +
-                " Total Assistido = " + totalAssistido;
+                " Total Assistido = " + totalAssistido + "\n" +
+                " Experiencia = " + experiencia + "\n" +
+                "-------------------------";
     }
 }

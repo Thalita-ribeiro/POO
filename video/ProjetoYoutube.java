@@ -5,23 +5,25 @@ public class ProjetoYoutube {
 
         Video video[] = new Video[2];
         Gafanhoto gafanhotos[] = new Gafanhoto[2];
+        Visualizacao visualizacao[] = new Visualizacao[2];
 
         video[0] = new Video("Curso de POO");
         video[0].setReproduzindo(true);
-        video[0].like();
-        video[0].like();
-        video[0].like();
-        video[0].setAvaliacao(9);
-        video[0].setViews(1000);
-        System.out.println(video[0].toString());
+        video[0].setViews(2);
+        video[0].setCurtidas(100);
 
         video[1] = new Video("Curso de Java");
         video[1].setReproduzindo(false);
 
         gafanhotos[0] = new Gafanhoto("Thalita", 21, "Feminino", "sribeiro.thalita");
-        System.out.println("-----------------------");
-        gafanhotos[0].setTotalAssistido(1000);
-        System.out.println(gafanhotos[0].toString());
+        gafanhotos[0].setTotalAssistido(2);
+        gafanhotos[0].setExperiencia(10);
+        gafanhotos[0].viuMaisUm();
 
+        gafanhotos[1] = new Gafanhoto("Hellen", 26, "Feminino", "hellen.caroline");
+
+        visualizacao[0] = new Visualizacao(gafanhotos[0], video[0]);
+        visualizacao[0].avaliar(35.0f);
+        System.out.println(visualizacao[0].toString());
     }
 }
