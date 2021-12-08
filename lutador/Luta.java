@@ -6,40 +6,7 @@ import java.util.Random;
 public class Luta {
     private Lutador desafiado;
     private Lutador desafiante;
-    private int rounds;
     private boolean aprovado;
-
-    public Lutador getDesafiado() {
-        return desafiado;
-    }
-
-    public void setDesafiado(Lutador desafiado) {
-        this.desafiado = desafiado;
-    }
-
-    public Lutador getDesafiante() {
-        return desafiante;
-    }
-
-    public void setDesafiante(Lutador desafiante) {
-        this.desafiante = desafiante;
-    }
-
-    public int getRounds() {
-        return rounds;
-    }
-
-    public void setRounds(int rounds) {
-        this.rounds = rounds;
-    }
-
-    public boolean isAprovado() {
-        return aprovado;
-    }
-
-    public void setAprovado(boolean aprovado) {
-        this.aprovado = aprovado;
-    }
 
     public void marcarLuta(Lutador desafiado, Lutador desafiante) {
         if (Objects.equals(desafiado.getCategoria(), desafiante.getCategoria()) && desafiante != desafiado) {
@@ -89,5 +56,4 @@ public class Luta {
             System.out.println("A luta não pode acontecer!");
         }
     }
-
 }
