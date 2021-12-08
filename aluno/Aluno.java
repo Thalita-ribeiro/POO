@@ -1,9 +1,12 @@
 package aluno;
-
 public class Aluno {
-   private String nome;
+    private String nome;
 
-    public double culcularMedia(double nota1, double nota2) {
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double calcularMedia(double nota1, double nota2) {
         return (nota1 + nota1) / 2;
     }
 }

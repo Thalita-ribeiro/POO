@@ -89,4 +89,5 @@ public class Luta {
             System.out.println("A luta não pode acontecer!");
         }
     }
+
 }
