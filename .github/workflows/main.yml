@@ -1,0 +1,42 @@
+name: DemoNewCD
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-10.15
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+
+  deploy-dev:
+    runs-on:  macos-10.15
+    environment: 
+      name: dev
+      url: 'https://github.com'
+    needs: build
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy Dev
+
+  deploy-hmg:
+    runs-on:  macos-10.15
+    environment: 
+      name: hmg
+      url: 'https://github.com'
+    needs: deploy-dev
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy HMG
+
+
+  deploy-prd:
+    runs-on:  macos-10.15
+    environment: 
+      name: prd
+      url: 'https://github.com'
+    needs: deploy-hmg
+    steps:
+      - name: Run a one-line script
+        run: echo Deploy PRD
